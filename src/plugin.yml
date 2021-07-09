@@ -1,0 +1,9 @@
+name: EShelper
+version: 1.0
+main: com.adamkrafter.EShelper
+commands: 
+    calc:     
+            description: Calculator.
+    pomoc:
+            description: Teleports to teleblock.          
+api-version: 1.17
