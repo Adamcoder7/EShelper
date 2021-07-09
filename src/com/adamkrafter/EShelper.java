@@ -71,5 +71,12 @@ public class EShelper extends JavaPlugin{
         cobsid.setIngredient('*', Material.OBSIDIAN);
         cobsid.setIngredient('B', Material.LAPIS_LAZULI);
         getServer().addRecipe(cobsid);
+        ItemStack netherit = new ItemStack(Material.CRYING_OBSIDIAN, 6);
+        ShapedRecipe netherite = new ShapedRecipe(netherit);
+        cobsid.shape("***","*B*","BBB");
+        cobsid.setIngredient('*', Material.GOLD_INGOT);
+        cobsid.setIngredient('B', Material.NETHERITE_SCRAP);
+        getServer().addRecipe(netherite);
+        
     }
 }
