@@ -77,6 +77,11 @@ public class EShelper extends JavaPlugin{
         netherite.setIngredient('*', Material.GOLD_INGOT);
         netherite.setIngredient('B', Material.NETHERITE_SCRAP);
         getServer().addRecipe(netherite);
-        
-    }
+        ItemStack sadl = new ItemStack(Material.SADDLE, 1);
+        ShapedRecipe sedlo = new ShapedRecipe(sadl);
+        sedlo.shape("***","EEE","EBE");
+        sedlo.setIngredient('*', Material.LEATHER);
+        sedlo.setIngredient('B', Material.TRIPWIRE_HOOK);
+        sedlo.setIngredient('E', Material.STRING);
+        getServer().addRecipe(sedlo);    }
 }
