@@ -83,5 +83,12 @@ public class EShelper extends JavaPlugin{
         sedlo.setIngredient('*', Material.LEATHER);
         sedlo.setIngredient('B', Material.TRIPWIRE_HOOK);
         sedlo.setIngredient('E', Material.STRING);
-        getServer().addRecipe(sedlo);    }
+        getServer().addRecipe(sedlo);
+        ItemStack ironarmorkon = new ItemStack(Material.IRON_HORSE_ARMOR, 1);
+        ShapedRecipe ironkon = new ShapedRecipe(ironarmorkon);
+        sedlo.shape("B**","BBB","B*B");
+        sedlo.setIngredient('*', Material.AIR);
+        sedlo.setIngredient('B', Material.IRON_INGOT);
+        getServer().addRecipe(ironkon);  
+    }
 }
